@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Advokat Igor Janković nudi usluge pravnih saveta i zastupanja pred sudom. Vrši izradu svih vrsta ugovora kao i pribavljanje dokumentacije za katastar ili neki drugi državni organ.">
+    <meta name="author" content="RDdesign">
+    <meta name="keywords" content="zakon, ugovor, sud, prekršajno, krivično, porodično, imovinsko, radno, pravo, zastupanja, šteta, legalizacija, postupak, saveti">
+
+    <!-- <link rel="canonical" href="http://protech-servis.rs/" /> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/minicss.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Advokat Igor Jankovic</title>
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <title>Advokat Igor Janković</title>
 </head>
 
 <body>
@@ -190,7 +192,7 @@
                 </div>
 
                 <div class="col-12 col-md-6">
-                    <p class="text-center">Ukoliko imate pitanje napisite poruku.</p>
+                    <p class="text-center">Ukoliko imate pitanje napišite poruku.</p>
                     <form method="POST" name="contactform" action="contact-form-handler.php">
                         <p>
                             <input type="text" name="name" placeholder="Vaše ime">
@@ -228,14 +230,13 @@
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="js/main.js"></script>
+    <script src="js/minijs.js"></script>
 </body>
 
 </html>
