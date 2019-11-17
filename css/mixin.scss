@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway&display=swap');
+$small-device: 767px;
+@mixin small-device {
+    @media(max-width: #{$small-device}) {
+        @content;
+    }
+}
+
+$medium-device: 768px;
+$large-device: 1024px;
+@mixin medium-device {
+    @media(min-width: #{$medium-device}) and (max-width: #{$large-device}) {
+        @content;
+    }
+}
+
+@mixin large-device {
+    @media(min-width: #{$large-device}) {
+        @content;
+    }
+}
+
+$zlatna: #ff9700;
+$zlatna2: rgba(255,
+151,
+0,
+.3);

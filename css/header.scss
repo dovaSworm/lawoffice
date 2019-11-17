@@ -1,0 +1,151 @@
+@import 'mixin';
+section.hero-sec {
+    margin-top: -70px;
+    position: relative;
+    background: url(../img/book3.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #dfc095;
+    height: 100vh;
+    // clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    @include medium-device {
+        height: 60vh;
+    }
+}
+
+#hero {
+    padding-top: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+    @include small-device {
+        background-size: cover;
+    }
+    * {
+        z-index: 3;
+        position: relative;
+    }
+    h1 {
+        z-index: 3;
+        font-size: 2.1rem;
+        font-weight: bold;
+        @include small-device {
+            font-size: 1.4rem;
+        }
+    }
+    p {
+        z-index: 3;
+        font-family: 'Poiret One';
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        @include small-device {
+            font-size: 1rem;
+        }
+    }
+    a {
+        width: fit-content;
+        position: relative;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+    img {
+        transition: opacity 3s ease;
+        opacity: 1;
+        height: 400px;
+        @include small-device {
+            height: 200px;
+        }
+        @include medium-device {
+            height: 300px;
+        }
+    }
+    #naslov {
+        opacity: 0;
+    }
+    div.ml-auto,
+    div.mr-auto {
+        width: fit-content;
+    }
+    div.mr-auto {
+        @include small-device {
+            margin-top: 85px;
+        }
+    }
+    div.d-flex {
+        align-items: center;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 3rem;
+        height: 20px;
+        width: fit-content;
+        a {
+            margin: auto;
+        }
+        img {
+            transition: opacity 1.5s ease;
+            margin: auto;
+            display: block;
+            opacity: 0;
+            margin-top: 20px;
+            height: 35px!important;
+        }
+        &:hover {
+            a {
+                background: $zlatna2;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#hero::after {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(3, 3, 3, .5);
+}
+
+#my-navbar {
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    -webkit-transition: opacity 1s;
+    /* Safari prior 6.1 */
+    transition: opacity 1s;
+    opacity: 0;
+    // height: 70px;
+    width: 100%;
+    @include small-device {
+        height: 52px;
+    }
+    button {
+        border: none!important;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+    button span img {
+        height: 35px;
+        width: 35px;
+    }
+    ul li {
+        &:hover {
+            color: $zlatna;
+        }
+    }
+}
+
+a.navbar-brand img {
+    height: 62px;
+    @include small-device {
+        height: 44px;
+    }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Advokat Igor Jankovic</title>
+</head>
+
+<body>
+    <header>
+        <div id="my-navbar">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="img/malilogo.png" alt="Logo"></a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="my-toggler">
+                        <span><img src="img/bars2.png" alt="bars"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home">Početna<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">O meni</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Usluge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <section class="hero-sec">
+            <div id="hero">
+                <div class="container">
+                    <div class="mr-auto anima-left" id="naslov">
+                        <h1>Igor Jaćimović Advokat</h1>
+                        <p>Vaš zastupnik u oblastima prava</p>
+                        <img src="img/logoprozirni.png" alt="Igor Jacimovic">
+                    </div>
+
+                    <!-- <div class="ml-auto">
+                        <img src="img/logoprozirni.png" alt="Igor Jacimovic">
+                    </div> -->
+
+                    <div class="d-flex flex-column">
+                        <a class="btn" href="#services">USLUGE</a>
+                        <img src="img/strelicadole.png" alt="arrow">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="services">
+            <div class="container">
+                <h2>Oblasti prava u kojima radim</h2>
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-6">
+                        <img src="img/serivces5.jpg" alt="Slika za services">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti vitae accusamus cupiditate quos minima! Blanditiis veniam sit nam quisquam, illo accusamus earum sint adipisci nobis aliquid iure atque ratione suscipit reiciendis
+                            soluta facilis sed et minus! Molestias voluptas sed dolorem iure quis nulla. Minus eos magni quae, assumenda similique earum!</p>
+                    </div>
+                </div>
+                <div class="row no-gutters w-100">
+                    <div class="col-12 col-md-4">
+                        <h4>Usluge</h4>
+                        <ul>
+                            <li target="nasledno">Nasledno i porodično pravo</li>
+                            <li target="ugovori">Izrada ugovora i drugih pravnih akata</li>
+                            <li target="steta">Naknada štete</li>
+                            <li target="krivica">Krivično pravo</li>
+                            <li target="prekrsaj">Prekšajno pravo</li>
+                            <li target="legalizacija">Legalizija i upis nekretnina</li>
+                            <li target="imovina">Imovinsko pravo</li>
+                            <li target="saveti">Pravni saveti</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="wrapper-service">
+                            <div class="tekst" id="nasledno">
+                                <h3>Nasledno i porodično pravo</h3>
+                                Porodično pravo je posebna grana prava koja uređuje odnose u porodici, kao i odnose porodice i društva. Takođe, to je posebna pravna nauka koja postojeće pravne norme o porodici sistematizuje, objašnjava i proučava, ali i predlaže nova zakonska rešenja.
+                                <br>Vršimo sastavljanje predbračnih ugovora, razvod braka, utvrđivanje i priznanje očinstva, podela imovine, zakonsko izdržavanje, vršenje roditeljskog prava.<br> Nasledno pravo je grana prava koja se bavi svim aspektima
+                                nasleđivanja, tj. raspodelom imovine, pravima i obavezama ostavioca (de cuius-a) u slučaju njegove smrti.<br> Nasleđivanje u našem pravnom sistemu sprovodi se po pravilima zakonskog i testamentarnog nasleđivanja.
+                                <br> Sastavljanje testamenta, ugovora o doživotnom izdržavanju, ugovora o ustupanju i raspodeli imovine, zaštita nužnog dela, pokretanje i zastupanje u ostavinskom postupku.
+                            </div>
+                            <div class="tekst" id="ugovori">
+                                <h3>Ugovorno pravo</h3>
+                                Izrada složenih ugovora pravnim i fizičkim licima od bitnih elemenata, preko odgovarajućih sredstava obezbeđenja izvršenja ugovora, regulisanja poreskih aspekata, poverljivosti, načina rešavanja eventualnih nesporazuma i mnogih drugih aspekata, u savremenoj
+                                advokatskoj praksi zahteva maksimalnu angažovanost i posvećenost, te pravničku veštinu i umeće po kojem se prepoznaju vrhunski pravnici. Nudimo: učestvovanje u pregovorima, sastavljanje svih vrsta ugovora,zastupanje u postupcima
+                                naknade štete, ispunjenje, raskid poništaj, utvrđenje ništavosti ugovora, naplata potaživanja, sticanje bez osnova
+                            </div>
+                            <div class="tekst" id="steta">
+                                <h3>Nadoknada štete</h3>
+                                Ko drugome prouzrokuje štetu dužan ju je nadoknaditi. Šteta može biti materijalna na imovini oštećenih i nematerijalna za pretrpljene fizičke bolove, duševne bolove, zbog umanjenja životne aktivnosti, naruženosti, povrede ugleda časti ili slobode prava
+                                ličnosti, kao i za strah ukoliko jačina bola i straha to opravdava. Šteta može biti stvarna ili izmakla korist. Štetni događaji mogu nastati u raznim životnim situacijama i na različitim mestima npr. na poslu-povredom na
+                                radu, na javnom mestu, u školi, ujedom psa lutalice ili što se najčešće dešava u praksi u saobraćaju. Bez obzira na mesto nastanka štete štetnik je uvek dužan nadoknaditi je, takođe naknada se može potraživati i od osiguravajućeg
+                                društva lica koje je prouzrokovalo štetu.
+                            </div>
+                            <div class="tekst" id="krivica">
+                                <h3>Krivično pravo</h3>
+                                Кrivično pravo je zakon koji se odnosi na zločin. On propisuje ponašanje koje se smatra pretnjama, štetnim ili na drugi način ugrožavanje imovine, zdravlja, sigurnosti i moralne dobrobiti ljudi. Većina krivičnog zakona utvrđuje se statutom, što znači
+                                da zakon donosi zakonodavstvo. To uključuje kažnjavanje ljudi koji krše ove zakone. Zastupanje fizičkih lica u delima opšteg kriminaliteta, zastupanje pravnih lica u krivičnim delima i privrednim prestupima, zastupanje
+                                oštećenih lica krivičnim delima
+                            </div>
+                            <div class="tekst" id="prekrsaj">
+                                <h3>Prekršajno pravo</h3>
+                                Prekršajno pravo je grana prava koja reguliše uslove prekršajne odgovornosti građana i pravnih lica, prekršajni postupak pred prekršajnim sudom i prekršajne sankcije koje se izriču učiniocima.<br>Sankcije iz prekršaja često
+                                mogu biti prilično oštre. U nekim slučajevima oštrije prema okrivljenom nego i krivične sankcije. Tako recimo, za isti prestup, u prekršajnom postupku je obavezna mera oduzimanja vozačke dozvole, dok u krivičnom postupku
+                                za istu stvar takve mere nema.<br>Advokat za prekršaje može delovati tako što će sa strankom otići na ročište za saslušanje, poslati pismenu odbranu, a posle donošenja presude, uložiti žalbu ili drugi pravni lek, te pratiti
+                                da sud ne učini neku procesnu grešku ili nepravilnost. Prekršajni postupak često u sebi sadrži formalne nedostatke, koje okrivljeni često nije u stanju da uoči, te treba svakako pitati advokata za prekršaje za mišljenje.
+                            </div>
+                            <div class="tekst" id="saveti">
+                                <h3>Pravni saveti</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sed maxime nisi est. Debitis quidem harum eum nostrum quam mollitia inventore dolorem delectus velit fugit maiores, repellat, nam asperiores fuga ipsam voluptates magnam! Maxime fugit eum
+                                quisquam laborum nam maiores iste, ipsam iure, quas qui esse, natus necessitatibus quae voluptatibus?
+                            </div>
+                            <div class="tekst" id="legalizacija">
+                                <h3>Legalizacija i upis nekretnina</h3>
+                                Legalizacija, tj.ozakonjenje je još jedan segment imovinskog prava. Procedura podvođenja nelegalizovanog objekta u pravne vode, kada je u fazi izgradnje izostalo pribavljanje potrebnih dozvola, naziva se ozakonjenje i sastoji se iz naknadnog izdavanja
+                                građevinske ili upotrebne dozvole za objekat.<br>Upisom prava svojine u katastar nepokretnosti, bez obzira na osnov po kom se upisujete u ovaj registar, definitivno postajete knjižni vlasnik
+                                na nepokretnosti. Postupak pred katastrom nepokretnosti je nadležnost našeg tima, za šta nas možete angažovati i to kako u slučaju potrebe za upisom prava svojine na nepokretnostima, tako i za druge forme zastupanja pred
+                                katastrom u okviru njegove nadležnosti.
+                            </div>
+                            <div class="tekst" id="imovina">
+                                <h3>Imovinsko pravo</h3>
+                                Imovinsko pravo je grana prava sa kojim će se u životu svaki građanin susresti pre ili kasnije. Ono se odnosi na sticanje i promet prava svojine na kućama, stanovima, zemljištu, novcu i bankovnim računima, automobilima i svim ostalim vrednostima. Osim
+                                toga, imovinsko pravo tiče se svih vrsta pravnih ugovora koje zaključuju pojedinci i privredna društva u okviru autonomije volje, naslednih odnosa, prava iz osiguranja, prava povodom prouzrokovanja štete, prava iz bračnih
+                                i porodičnih odnosa i slično.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>O meni</h2>
+                <div class="row no-gutters">
+                    <div class="col-12 col-md-6">
+                        <img src="img/services1.jpeg" alt="Slika za services">
+                    </div>
+                    <div class="col-12 col-md-6 d-flex align-items-center">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit at, inventore a libero autem veniam nisi, nesciunt illo possimus laudantium, sunt deserunt. Quas non eveniet, quod eos rem commodi minus, minima eum accusamus
+                            suscipit culpa, odio libero aspernatur quasi! Ea pariatur sunt provident quas laborum soluta eaque dolores maxime adipisci repudiandae! Dolore temporibus deserunt sed incidunt ullam repudiandae voluptates neque deleniti rem,
+                            officia vel omnis magni amet voluptas? Et aut soluta quisquam laborum assumenda impedit optio tempore ullam exercitationem, sapiente aliquam doloribus sed eum nobis non a nihil
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contact">
+        <div class="container">
+            <h2 class="text-center text-uppercase">kontakt</h2>
+            <div class="row no-gutters">
+                <div class="col-12 col-md-6">
+                    <div class="col-12 text-left">
+                        <h6 class="section-heading">Adresa</h6>
+                        <address>Omladinska 6<br />21000 Novi Sad, Veternik</address>
+                    </div>
+                    <div class="col-12 text-left">
+                        <h6 class="section-heading">Mail</h6>
+                        <a href="mailto:protechnology.servis@gmail.com">protechnology.servis@gmail.com</a>
+                    </div>
+                    <div class="col-12 text-left">
+                        <h6 class="section-heading">Telefon</h6>
+                        <a class="text-left" href="tel:+38164/6101-720">064/0790-276</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <p class="text-center">Ukoliko imate pitanje napisite poruku.</p>
+                    <form method="POST" name="contactform" action="contact-form-handler.php">
+                        <p>
+                            <input type="text" name="name" placeholder="Vaše ime">
+                        </p>
+                        <p>
+                            <input type="text" name="email" placeholder="Vaš email">
+                        </p>
+                        <p>
+                            <textarea rows="6" name="message" placeholder="Vaša poruka"></textarea>
+                        </p>
+                        <button role="button" type="submit" value="Submit">Pošalji</button>
+                    </form>
+                </div>
+                <div class="col-12 m-auto">
+                    <div style="width: 100%"><iframe width="100%" height="325" src="https://maps.google.com/maps?width=100%&amp;height=325&amp;hl=en&amp;q=Omladinska%206%20Veternik+(Igor%20Ja%C4%87imoiv%C4%87%20Advokat)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
+                            href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a title="Nazad na vrh stranice" href="#"><i class="fas fa-angle-double-up fa-3x"></i></a>
+            </div>
+
+        </div>
+        <!--  container -->
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row no-gutters flex-column text-center">
+                <a href="#"><img src="img/logonaszlatan6.png" alt="logo footer"></a>
+                <p class="text-center w-100"><small>Copyright © RDdesign 2019. All Rights Reserved</small></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

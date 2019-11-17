@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One|Raleway&display=swap");
+section.hero-sec {
+  margin-top: -70px;
+  position: relative;
+  background: url(../img/book3.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #dfc095;
+  height: 100vh;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.hero-sec {
+    height: 60vh;
+  }
+}
+
+#hero {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  #hero {
+    background-size: cover;
+  }
+}
+
+#hero * {
+  z-index: 3;
+  position: relative;
+}
+
+#hero h1 {
+  z-index: 3;
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  #hero h1 {
+    font-size: 1.4rem;
+  }
+}
+
+#hero p {
+  z-index: 3;
+  font-family: 'Poiret One';
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 767px) {
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+#hero a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+#hero img {
+  -webkit-transition: opacity 3s ease;
+  transition: opacity 3s ease;
+  opacity: 1;
+  height: 400px;
+}
+
+@media (max-width: 767px) {
+  #hero img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero img {
+    height: 300px;
+  }
+}
+
+#hero #naslov {
+  opacity: 0;
+}
+
+#hero div.ml-auto,
+#hero div.mr-auto {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media (max-width: 767px) {
+  #hero div.mr-auto {
+    margin-top: 85px;
+  }
+}
+
+#hero div.d-flex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 3rem;
+  height: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#hero div.d-flex a {
+  margin: auto;
+}
+
+#hero div.d-flex img {
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  margin: auto;
+  display: block;
+  opacity: 0;
+  margin-top: 20px;
+  height: 35px !important;
+}
+
+#hero div.d-flex:hover a {
+  background: rgba(255, 151, 0, 0.3);
+}
+
+#hero div.d-flex:hover img {
+  opacity: 1;
+}
+
+#hero::after {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+  background: rgba(3, 3, 3, 0.5);
+}
+
+#my-navbar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: opacity 1s;
+  /* Safari prior 6.1 */
+  transition: opacity 1s;
+  opacity: 0;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  #my-navbar {
+    height: 52px;
+  }
+}
+
+#my-navbar button {
+  border: none !important;
+}
+
+#my-navbar .navbar-toggler:focus,
+#my-navbar .navbar-toggler:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#my-navbar button span img {
+  height: 35px;
+  width: 35px;
+}
+
+#my-navbar ul li:hover {
+  color: #ff9700;
+}
+
+a.navbar-brand img {
+  height: 62px;
+}
+
+@media (max-width: 767px) {
+  a.navbar-brand img {
+    height: 44px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

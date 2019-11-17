@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Raleway&display=swap');
+$small-device: 767px;
+@mixin small-device {
+    @media(max-width: #{$small-device}) {
+        @content;
+    }
+}
+
+$medium-device: 768px;
+$large-device: 1024px;
+@mixin medium-device {
+    @media(min-width: #{$medium-device}) and (max-width: #{$large-device}) {
+        @content;
+    }
+}
+
+@mixin large-device {
+    @media(min-width: #{$large-device}) {
+        @content;
+    }
+}
+
+$zlatna: #ff9700;
+$zlatna2: rgba(255,
+151,
+0,
+.3);
+// GENERAL
+@import 'mixin';
+body,
+html {
+    -webkit-font-smoothing: antialiased;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poiret One';
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Raleway';
+}
+
+ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0!important;
+    padding: 0;
+}
+
+a {
+    text-decoration: none!important;
+    color: inherit!important;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+nav {
+    background: rgba(3, 3, 3, .83);
+    z-index: 12345!important;
+    border-bottom: 1px solid $zlatna;
+}
+
+.navbar {
+    padding: 0 5px!important;
+}
+
+.my-fixed-top {
+    z-index: 123!important;
+    top: 0;
+    position: fixed!important;
+    left: 0;
+}
+
+address {
+    margin-bottom: 0!important;
+}
+
+// HEADER
+section.hero-sec {
+    margin-top: -70px;
+    position: relative;
+    background: url(../img/book3.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #dfc095;
+    height: 100vh;
+    // clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    @include medium-device {
+        height: 60vh;
+    }
+}
+
+#hero {
+    padding-top: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+    @include small-device {
+        background-size: cover;
+    }
+    * {
+        z-index: 3;
+        position: relative;
+    }
+    h1 {
+        z-index: 3;
+        font-size: 2.1rem;
+        font-weight: bold;
+        @include small-device {
+            font-size: 1.4rem;
+        }
+    }
+    p {
+        z-index: 3;
+        font-family: 'Poiret One';
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        @include small-device {
+            font-size: 1rem;
+        }
+    }
+    a {
+        width: fit-content;
+        position: relative;
+        border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+    img {
+        transition: opacity 3s ease;
+        opacity: 1;
+        height: 400px;
+        @include small-device {
+            height: 200px;
+        }
+        @include medium-device {
+            height: 300px;
+        }
+    }
+    #naslov {
+        opacity: 0;
+    }
+    div.ml-auto,
+    div.mr-auto {
+        width: fit-content;
+    }
+    div.mr-auto {
+        @include small-device {
+            margin-top: 85px;
+        }
+    }
+    div.d-flex {
+        align-items: center;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 3rem;
+        height: 20px;
+        width: fit-content;
+        a {
+            margin: auto;
+        }
+        img {
+            transition: opacity 1.5s ease;
+            margin: auto;
+            display: block;
+            opacity: 0;
+            margin-top: 20px;
+            height: 35px!important;
+        }
+        &:hover {
+            a {
+                background: $zlatna2;
+            }
+            img {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+#hero::after {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background: rgba(3, 3, 3, .5);
+}
+
+#my-navbar {
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    -webkit-transition: opacity 1s;
+    /* Safari prior 6.1 */
+    transition: opacity 1s;
+    opacity: 0;
+    // height: 70px;
+    width: 100%;
+    @include small-device {
+        height: 52px;
+    }
+    button {
+        border: none!important;
+    }
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+        box-shadow: none;
+    }
+    button span img {
+        height: 35px;
+        width: 35px;
+    }
+    ul li {
+        &:hover {
+            color: $zlatna;
+        }
+    }
+}
+
+a.navbar-brand img {
+    height: 62px;
+    @include small-device {
+        height: 44px;
+    }
+}
+
+// MAIN
+main {
+    padding: 150px 0;
+    @include small-device {
+        padding: 50px 0;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    p {
+        padding-top: 20px;
+        margin-left: 30px;
+        // margin-left: -70px;
+        @include small-device {
+            margin-left: 1px!important;
+            margin-right: 1px!important;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+#services {
+    h2,
+    img,
+    .col-12.col-md-8,
+    .row:first-of-type {
+        opacity: 0;
+    }
+    ul {
+        width: fit-content;
+        border-top: 1px solid $zlatna;
+        border-bottom: 1px solid $zlatna;
+        cursor: pointer;
+        @include small-device {
+            width: 100%;
+        }
+        li {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 2px;
+            &:hover {
+                background: $zlatna2;
+            }
+        }
+    }
+    .row.w-100 {
+        margin-top: 150px;
+        @include small-device {
+            margin-top: 20px;
+        }
+    }
+    .row.w-100 * {
+        position: relative;
+        z-index: 3;
+    }
+    .row.w-100 .col-md-8 {
+        .wrapper-service {
+            h3 {
+                font-weight: bold;
+            }
+            position: absolute;
+            @include small-device {
+                position: relative;
+            }
+        }
+        height: 400px;
+        background: url(../img/hammer.jpg);
+        background-position: center;
+        background-size: cover;
+        @include medium-device {
+            height: 500px;
+        }
+        @include small-device {
+            height: unset;
+        }
+    }
+    .row.w-100 .col-md-8::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        content: '';
+        background: rgba(255, 255, 255, .7);
+    }
+    #nasledno,
+    #ugovori,
+    #steta,
+    #prekrsaj,
+    #legalizacija,
+    #imovina,
+    #saveti,
+    #krivica {
+        display: none;
+        height: 100%;
+        padding: 20px;
+        text-align: justify;
+        @include small-device {
+            padding: 5px;
+        }
+    }
+}
+
+div.col-12.col-md-6.d-flex::after {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    content: '';
+    z-index: -1;
+    background: rgba(218, 205, 188, .7);
+    @include small-device {
+        display: none;
+    }
+}
+
+#about {
+    margin-top: 150px;
+    @include small-device {
+        margin-top: 70px;
+    }
+    h2,
+    img,
+    .row {
+        opacity: 0;
+    }
+}
+
+// CONTACT
+#contact {
+    background-color: #dacdbc;
+    border-top: 2px solid $zlatna;
+    color: black;
+    padding: 80px 0 20px 0;
+    position: relative;
+    @include small-device {}
+    h2 {
+        opacity: 0;
+        margin-bottom: 40px;
+    }
+    h6 {
+        text-transform: uppercase;
+        font-family: 'Raleway';
+        margin-bottom: 0!important;
+    }
+    .row {
+        margin-top: 30px;
+    }
+    div.text-left {
+        margin-bottom: 20px;
+    }
+    .col-12.col-md-6 {
+        opacity: 0;
+    }
+    .col-12.m-auto {
+        opacity: 0;
+        padding-top: 20px;
+    }
+    a {
+        color: inherit;
+        &:hover {
+            text-decoration: none;
+            color: black;
+        }
+    }
+    form {
+        p {
+            width: 100%!important;
+        }
+        input,
+        textarea,
+        button {
+            display: block;
+            padding: 10px 15px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+            border: 0;
+            background: rgba(3, 3, 3, .93);
+            font-size: 12pt;
+            margin-bottom: 3px;
+            color: $zlatna;
+        }
+        button {
+            width: 25%;
+            align-self: flex-end;
+            margin: auto;
+            @include small-device {
+                width: 32%;
+            }
+        }
+    }
+    div.text-center:last-of-type {
+        margin: 20px 0 10px 0;
+    }
+}
+
+///////////////////////////////FOOTER/////////////////////////////////////
+footer {
+    .row {
+        opacity: 0;
+    }
+    font-size: 12px;
+    color: $zlatna;
+    background: rgba(3,
+    3,
+    3,
+    .93);
+    @include small-device {}
+    div.container {
+        padding-top: 10px;
+    }
+    a img {
+        margin: auto;
+        height: 60px;
+    }
+}
+
+//ANIMATION
+@keyframes toggler-anima {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+.toggler-anima {
+    animation: toggler-anima 1.5s forwards 0s ease;
+}
+
+@keyframes skill-bar {
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.skill-bar {
+    animation: skill-bar 3s forwards 0s ease;
+}
+
+@keyframes anima-right {
+    0% {
+        transform: rotate(0) translateX(90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-right {
+    animation: anima-right 1.5s forwards 0s linear;
+}
+
+@keyframes anima-left {
+    0% {
+        transform: rotate(0) translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-left {
+    animation: anima-left 2s forwards 0s linear;
+}
+
+@keyframes anima-up-down {
+    0% {
+        transform: rotate(0) translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-up-down {
+    animation: anima-up-down 1s forwards 0s linear;
+}
+
+@keyframes anima-down-up {
+    0% {
+        transform: rotate(0) translateY(90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-down-up {
+    animation: anima-down-up 1.5s forwards 0s linear;
+}
+
+@keyframes small-in {
+    0% {
+        transform: scale(.1);
+        opacity: .3;
+    }
+    100% {
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+.small-in {
+    animation: small-in 2s forwards 0s ease;
+}
+
+@keyframes anima-hero {
+    0% {
+        transform: scale(.2) skewX(-9deg);
+        transform-origin: 70% -50%;
+        opacity: .1;
+    }
+    100% {}
+}
+
+.anima-hero {
+    animation: anima-hero 3s forwards 0s linear;
+}
+
+.contact-input {
+    animation: animationFrames ease 2.2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    /*when the spec is finished*/
+    -webkit-animation: animationFrames ease 2.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode: forwards;
+    /*Chrome 16+, Safari 4+*/
+    -moz-animation: animationFrames ease 2.2s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-fill-mode: forwards;
+    /*FF 5+*/
+    -o-animation: animationFrames ease 2.2s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -o-animation-fill-mode: forwards;
+    /*Not implemented yet*/
+    -ms-animation: animationFrames ease 2.2s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+    -ms-animation-fill-mode: forwards;
+    /*IE 10+*/
+}
+
+@keyframes animationFrames {
+    0% {
+        opacity: 0;
+        transform: scaleX(0.00);
+    }
+    100% {
+        transform: scaleX(1.00);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: scaleX(0.00);
+    }
+    100% {
+        -moz-transform: scaleX(1.00);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: scaleX(0.00);
+    }
+    100% {
+        -webkit-transform: scaleX(1.00);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: scaleX(0.00);
+    }
+    100% {
+        -o-transform: scaleX(1.00);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: scaleX(0.00);
+    }
+    100% {
+        -ms-transform: scaleX(1.00);
+    }
+}
+
+@keyframes toggler-anima {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+.toggler-anima {
+    animation: toggler-anima 1.5s forwards 0s ease;
+}
+
+@keyframes skill-bar {
+    0% {
+        transform: rotateX(90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.skill-bar {
+    animation: skill-bar 3s forwards 0s ease;
+}
+
+@keyframes anima-right {
+    0% {
+        transform: rotate(0) translateX(90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-right {
+    animation: anima-right 1.5s forwards 0s linear;
+}
+
+@keyframes anima-left {
+    0% {
+        transform: rotate(0) translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-left {
+    animation: anima-left 2s forwards 0s linear;
+}
+
+@keyframes anima-up-down {
+    0% {
+        transform: rotate(0) translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-up-down {
+    animation: anima-up-down 1s forwards 0s linear;
+}
+
+@keyframes anima-down-up {
+    0% {
+        transform: rotate(0) translateY(90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+.anima-down-up {
+    animation: anima-down-up 1.5s forwards 0s linear;
+}
+
+@keyframes small-in {
+    0% {
+        transform: scale(.1);
+        opacity: .3;
+    }
+    100% {
+        transform: rotateX(0);
+        opacity: 1;
+    }
+}
+
+.small-in {
+    animation: small-in 2s forwards 0s ease;
+}
+
+@keyframes anima-hero {
+    0% {
+        transform: scale(.2) skewX(-9deg);
+        transform-origin: 70% -50%;
+        opacity: .1;
+    }
+    100% {}
+}
+
+.anima-hero {
+    animation: anima-hero 3s forwards 0s linear;
+}
+
+.contact-input {
+    animation: animationFrames ease 2.2s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%;
+    animation-fill-mode: forwards;
+    /*when the spec is finished*/
+    -webkit-animation: animationFrames ease 2.2s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode: forwards;
+    /*Chrome 16+, Safari 4+*/
+    -moz-animation: animationFrames ease 2.2s;
+    -moz-animation-iteration-count: 1;
+    -moz-transform-origin: 50% 50%;
+    -moz-animation-fill-mode: forwards;
+    /*FF 5+*/
+    -o-animation: animationFrames ease 2.2s;
+    -o-animation-iteration-count: 1;
+    -o-transform-origin: 50% 50%;
+    -o-animation-fill-mode: forwards;
+    /*Not implemented yet*/
+    -ms-animation: animationFrames ease 2.2s;
+    -ms-animation-iteration-count: 1;
+    -ms-transform-origin: 50% 50%;
+    -ms-animation-fill-mode: forwards;
+    /*IE 10+*/
+}
+
+@keyframes animationFrames {
+    0% {
+        opacity: 0;
+        transform: scaleX(0.00);
+    }
+    100% {
+        transform: scaleX(1.00);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes animationFrames {
+    0% {
+        -moz-transform: scaleX(0.00);
+    }
+    100% {
+        -moz-transform: scaleX(1.00);
+    }
+}
+
+@-webkit-keyframes animationFrames {
+    0% {
+        -webkit-transform: scaleX(0.00);
+    }
+    100% {
+        -webkit-transform: scaleX(1.00);
+    }
+}
+
+@-o-keyframes animationFrames {
+    0% {
+        -o-transform: scaleX(0.00);
+    }
+    100% {
+        -o-transform: scaleX(1.00);
+    }
+}
+
+@-ms-keyframes animationFrames {
+    0% {
+        -ms-transform: scaleX(0.00);
+    }
+    100% {
+        -ms-transform: scaleX(1.00);
+    }
+}
