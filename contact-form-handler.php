@@ -58,22 +58,35 @@
 date_default_timezone_set('Etc/UTC');
 
 // Edit this path if PHPMailer is in a different location.
-require './PHPMailer/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-$mail = new PHPMailer;
+//Load Composer's autoloader
+require 'vendor/autoload.php';
+
+//Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(true);
 $mail->isSMTP();
 
 /*
  * Server Configuration
  */
-
+$mail->SMTPDebug = false; 
 $mail->Host = 'smtp.gmail.com'; // Which SMTP server to use.
 $mail->Port = 587; // Which port to use, 587 is the default port for TLS security.
 $mail->SMTPSecure = 'tls'; // Which security method to use. TLS is most secure.
 $mail->SMTPAuth = true; // Whether you need to login. This is almost always required.
 $mail->Username = "misolovkaiq@gmail.com"; // Your Gmail address.
 $mail->Password = "misolov1983ka"; // Your Gmail login password or App Specific Password.
-
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; 
+$mail->SMTPOptions = array(
+    'ssl' => array(
+    'verify_peer' => false,
+    'verify_peer_name' => false,
+    'allow_self_signed' => true
+    )
+    );
 /*
  * Message Configuration
  */
@@ -110,7 +123,7 @@ if ($mail->send()) {?>
         </div>
     </div>
     <?php
-    header( "refresh:3;url=http://portfoliodd.epizy.com/" );
+    header( "refresh:3;url=http://reacttest.epizy.com/" );
 } else {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } ?>
