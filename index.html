@@ -1,294 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="Advokat Igor Janković nudi usluge pravnih saveta i zastupanja pred sudom. Vrši izradu svih vrsta ugovora kao i pribavljanje dokumentacije za katastar ili neki drugi državni organ.">
-    <meta name="author" content="RDdesign">
-    <meta name="keywords"
-        content="zakon, ugovor, sud, prekršajno, krivično, porodično, imovinsko, radno, pravo, zastupanja, šteta, legalizacija, postupak, saveti">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Advokat Igor Janković nudi usluge pravnih saveta i zastupanja pred sudom. Vrši izradu svih vrsta ugovora kao i pribavljanje dokumentacije za katastar ili neki drugi državni organ."
+    />
+    <meta name="author" content="RDdesign" />
+    <meta
+      name="keywords"
+      content="zakon, ugovor, sud, prekršajno, krivično, porodično, imovinsko, radno, pravo, zastupanja, šteta, legalizacija, postupak, saveti, veternik"
+    />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
     <!-- <link rel="canonical" href="http://protech-servis.rs/" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <title>Advokat Igor Janković</title>
-</head>
+    <link
+      href="./fontawesome-free-6.5.1-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="./fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Advokat Igor Janković, Veternik</title>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="my-navbar">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="img/malilogo.png" alt="Logo"></a>
+      <nav id="navbar" class="fixed-top">
+        <div class="container d-flex align-items-center">
+          <a href="#"><img src="img/malilogo.png" alt="Logo" /></a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation" id="my-toggler">
-                        <span><img src="img/bars2.png" alt="bars"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#home">Početna<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">O meni</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#services">Usluge</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-        <section class="hero-sec">
-            <div id="hero">
-                <div class="container">
-                    <div class="mr-auto anima-left" id="naslov">
-                        <h1>Igor Jaćimović Advokat</h1>
-                        <p>Vaš zastupnik u oblastima prava</p>
-                        <img src="img/logoprozirni.png" alt="Igor Jacimovic">
-                    </div>
-
-                    <!-- <div class="ml-auto">
-                        <img src="img/logoprozirni.png" alt="Igor Jacimovic">
-                    </div> -->
-
-                    <div class="d-flex flex-column">
-                        <a class="btn" href="#services">USLUGE</a>
-                        <img src="img/strelicadole.png" alt="arrow">
-                    </div>
-                </div>
+          <div class="nav-links">
+            <div class="link-h">
+              <a class="nav-link" href="#home">HOME</a>
             </div>
-        </section>
+            <div class="link-h">
+              <a class="nav-link" href="#about">O meni</a>
+            </div>
+            <div class="link-h">
+              <a class="nav-link" href="#services"> Usluge</a>
+            </div>
+            <div class="link-h">
+              <a class="nav-link" href="#contact"> Kontakt</a>
+            </div>
+          </div>
+          <div class="toggler">
+            <span class="tog-line"></span>
+            <span class="tog-line"></span>
+            <span class="tog-line"></span>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-sec">
+        <div id="hero">
+          <div class="anima-left" id="naslov">
+            <h1>Igor Jaćimović Advokat <span>Veternik</span></h1>
+            <p>Vaš zastupnik u oblastima prava</p>
+            <img src="img/logoprozirni.png" alt="Igor Jacimovic" />
+          </div>
+          <div class="d-flex flex-column">
+            <a class="btn" href="#services">PRAVNE USLUGE</a>
+            <img src="img/strelicadole.png" alt="arrow" />
+          </div>
+        </div>
+      </section>
     </header>
 
     <main>
-        <section id="services">
-            <div class="container">
-                <h2>Oblasti prava u kojima radim</h2>
-                <div class="row no-gutters">
-                    <div class="col-12 col-md-6">
-                        <img src="img/serivces5.jpg" alt="Slika za services">
-                    </div>
-                    <div class="col-12 col-md-6 d-flex align-items-center">
-                        <p>Advokatska kancelarija Jaćimović pruža stručnu i profesionalnu pravnu pomoć u svim oblastima prava, kako fizičkim, tako i
-                            pravnim licima, domaćim i stranim. Posvećujemo vreme da istinski razumemo vaše snove i
-                            ciljeve, pružamo svesrdnu i momentalnu podršku koja vam je potrebna da prevaziđete prepreke,
-                            iskoristite ukazane prilike i ostvarite svoje ambicije.</p>
-                    </div>
-                </div>
-                <div class="row no-gutters w-100">
-                    <div class="col-12 col-md-4">
-                        <h4>Usluge</h4>
-                        <ul>
-                            <li target="nasledno">Nasledno i porodično pravo</li>
-                            <li target="ugovori">Izrada ugovora i drugih pravnih akata</li>
-                            <li target="steta">Naknada štete</li>
-                            <li target="krivica">Krivično pravo</li>
-                            <li target="prekrsaj">Prekšajno pravo</li>
-                            <li target="legalizacija">Legalizija i upis nekretnina</li>
-                            <li target="imovina">Imovinsko pravo</li>
-                            <li target="saveti">Pravni saveti</li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-8">
-                        <div class="wrapper-service">
-                            <div class="tekst" id="nasledno">
-                                <h3>Nasledno i porodično pravo</h3>
-                                Porodično pravo je posebna grana prava koja uređuje odnose u porodici, kao i odnose
-                                porodice i društva. Takođe, to je posebna pravna nauka koja postojeće pravne norme o
-                                porodici sistematizuje, objašnjava i proučava, ali i predlaže nova zakonska rešenja.
-                                <br>Vršimo sastavljanje predbračnih ugovora, razvod braka, utvrđivanje i priznanje
-                                očinstva, podela imovine, zakonsko izdržavanje, vršenje roditeljskog prava.<br> Nasledno
-                                pravo je grana prava koja se bavi svim aspektima
-                                nasleđivanja, tj. raspodelom imovine, pravima i obavezama ostavioca (de cuius-a) u
-                                slučaju njegove smrti.<br> Nasleđivanje u našem pravnom sistemu sprovodi se po pravilima
-                                zakonskog i testamentarnog nasleđivanja.
-                                <br> Sastavljanje testamenta, ugovora o doživotnom izdržavanju, ugovora o ustupanju i
-                                raspodeli imovine, zaštita nužnog dela, pokretanje i zastupanje u ostavinskom postupku.
-                            </div>
-                            <div class="tekst" id="ugovori">
-                                <h3>Ugovorno pravo</h3>
-                                Izrada složenih ugovora pravnim i fizičkim licima od bitnih elemenata, preko
-                                odgovarajućih sredstava obezbeđenja izvršenja ugovora, regulisanja poreskih aspekata,
-                                poverljivosti, načina rešavanja eventualnih nesporazuma i mnogih drugih aspekata, u
-                                savremenoj
-                                advokatskoj praksi zahteva maksimalnu angažovanost i posvećenost, te pravničku veštinu i
-                                umeće po kojem se prepoznaju vrhunski pravnici. Nudimo: učestvovanje u pregovorima,
-                                sastavljanje svih vrsta ugovora,zastupanje u postupcima
-                                naknade štete, ispunjenje, raskid poništaj, utvrđenje ništavosti ugovora, naplata
-                                potaživanja, sticanje bez osnova
-                            </div>
-                            <div class="tekst" id="steta">
-                                <h3>Nadoknada štete</h3>
-                                Ko drugome prouzrokuje štetu dužan ju je nadoknaditi. Šteta može biti materijalna na
-                                imovini oštećenih i nematerijalna za pretrpljene fizičke bolove, duševne bolove, zbog
-                                umanjenja životne aktivnosti, naruženosti, povrede ugleda časti ili slobode prava
-                                ličnosti, kao i za strah ukoliko jačina bola i straha to opravdava. Šteta može biti
-                                stvarna ili izmakla korist. Štetni događaji mogu nastati u raznim životnim situacijama i
-                                na različitim mestima npr. na poslu-povredom na
-                                radu, na javnom mestu, u školi, ujedom psa lutalice ili što se najčešće dešava u praksi
-                                u saobraćaju. Bez obzira na mesto nastanka štete štetnik je uvek dužan nadoknaditi je,
-                                takođe naknada se može potraživati i od osiguravajućeg
-                                društva lica koje je prouzrokovalo štetu.
-                            </div>
-                            <div class="tekst" id="krivica">
-                                <h3>Krivično pravo</h3>
-                                Кrivično pravo je zakon koji se odnosi na zločin. On propisuje ponašanje koje se smatra
-                                pretnjama, štetnim ili na drugi način ugrožavanje imovine, zdravlja, sigurnosti i
-                                moralne dobrobiti ljudi. Većina krivičnog zakona utvrđuje se statutom, što znači
-                                da zakon donosi zakonodavstvo. To uključuje kažnjavanje ljudi koji krše ove zakone.
-                                Zastupanje fizičkih lica u delima opšteg kriminaliteta, zastupanje pravnih lica u
-                                krivičnim delima i privrednim prestupima, zastupanje
-                                oštećenih lica krivičnim delima
-                            </div>
-                            <div class="tekst" id="prekrsaj">
-                                <h3>Prekršajno pravo</h3>
-                                Prekršajno pravo je grana prava koja reguliše uslove prekršajne odgovornosti građana i
-                                pravnih lica, prekršajni postupak pred prekršajnim sudom i prekršajne sankcije koje se
-                                izriču učiniocima.<br>Sankcije iz prekršaja često
-                                mogu biti prilično oštre. U nekim slučajevima oštrije prema okrivljenom nego i krivične
-                                sankcije. Tako recimo, za isti prestup, u prekršajnom postupku je obavezna mera
-                                oduzimanja vozačke dozvole, dok u krivičnom postupku
-                                za istu stvar takve mere nema.<br>Advokat za prekršaje može delovati tako što će sa
-                                strankom otići na ročište za saslušanje, poslati pismenu odbranu, a posle donošenja
-                                presude, uložiti žalbu ili drugi pravni lek, te pratiti
-                                da sud ne učini neku procesnu grešku ili nepravilnost. Prekršajni postupak često u sebi
-                                sadrži formalne nedostatke, koje okrivljeni često nije u stanju da uoči, te treba
-                                svakako pitati advokata za prekršaje za mišljenje.
-                            </div>
-                            <div class="tekst" id="saveti">
-                                <h3>Pravni saveti</h3>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sed maxime nisi est.
-                                Debitis quidem harum eum nostrum quam mollitia inventore dolorem delectus velit fugit
-                                maiores, repellat, nam asperiores fuga ipsam voluptates magnam! Maxime fugit eum
-                                quisquam laborum nam maiores iste, ipsam iure, quas qui esse, natus necessitatibus quae
-                                voluptatibus?
-                            </div>
-                            <div class="tekst" id="legalizacija">
-                                <h3>Legalizacija i upis nekretnina</h3>
-                                Legalizacija, tj.ozakonjenje je još jedan segment imovinskog prava. Procedura podvođenja
-                                nelegalizovanog objekta u pravne vode, kada je u fazi izgradnje izostalo pribavljanje
-                                potrebnih dozvola, naziva se ozakonjenje i sastoji se iz naknadnog izdavanja
-                                građevinske ili upotrebne dozvole za objekat.<br>Upisom prava svojine u katastar
-                                nepokretnosti, bez obzira na osnov po kom se upisujete u ovaj registar, definitivno
-                                postajete knjižni vlasnik
-                                na nepokretnosti. Postupak pred katastrom nepokretnosti je nadležnost našeg tima, za šta
-                                nas možete angažovati i to kako u slučaju potrebe za upisom prava svojine na
-                                nepokretnostima, tako i za druge forme zastupanja pred
-                                katastrom u okviru njegove nadležnosti.
-                            </div>
-                            <div class="tekst" id="imovina">
-                                <h3>Imovinsko pravo</h3>
-                                Imovinsko pravo je grana prava sa kojim će se u životu svaki građanin susresti pre ili
-                                kasnije. Ono se odnosi na sticanje i promet prava svojine na kućama, stanovima,
-                                zemljištu, novcu i bankovnim računima, automobilima i svim ostalim vrednostima. Osim
-                                toga, imovinsko pravo tiče se svih vrsta pravnih ugovora koje zaključuju pojedinci i
-                                privredna društva u okviru autonomije volje, naslednih odnosa, prava iz osiguranja,
-                                prava povodom prouzrokovanja štete, prava iz bračnih
-                                i porodičnih odnosa i slično.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <section id="oblast">
+        <div class="container">
+          <div class="row g-0 oblast">
+            <h2>Oblasti prava u kojima radim</h2>
+            <div class="col-12 col-md-6">
+              <img src="img/serivces5.jpg" alt="Slika za services" />
             </div>
-        </section>
-        <section id="about">
-            <div class="container">
-                <h2>O meni</h2>
-                <div class="row no-gutters">
-                    <div class="col-12 col-md-6">
-                        <img src="img/services1.jpeg" alt="Slika za services">
-                    </div>
-                    <div class="col-12 col-md-6 d-flex align-items-center">
-                        <p>Advokatska kancelarija Jaćimović sa sedištem u Veterniku, zasniva saradnju na međusobnom poverenju te se obavezuje na pouzdan, otvoren i proaktivan pristup i komunikaciju sa klijentima. Naše znanje stavljamo u svrhu ostvarivanja svih vaših prava. Kvalitet nam je osnovni princip u radu. Na osnovu Vaših potreba i očekivanja obezbeđujemo vrhunski kvalitet usluge u svim oblastima prava. U zajedničkoj saradnji sa klijentima definišemo očekivanja po pitanju našeg angažovanja, nakon čega na osnovu našeg znanja i iskustva primenjujemo odgovarajuću strategiju radi postizanja najoptimalnijeg rezultata.</p>
-                    </div>
-                </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <p class="text">
+                Advokatska kancelarija Jaćimović pruža stručnu i profesionalnu
+                pravnu pomoć u svim oblastima prava, kako fizičkim, tako i
+                pravnim licima, domaćim i stranim. Posvećujemo vreme da istinski
+                razumemo vaše snove i ciljeve, pružamo svesrdnu i momentalnu
+                podršku koja vam je potrebna da prevaziđete prepreke,
+                iskoristite ukazane prilike i ostvarite svoje ambicije.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="row g-0 serv-h">
+            <h2>PRAVNE USLUGE</h2>
+            <div class="col-12 col-md-4">
+              <ul id="uslugeu">
+                <li target="eregistracija">
+                  e-Registracija privrednih subjekata
+                </li>
+                <li target="esalter">Upis u katastar putem e-Saltera</li>
+                <li target="nasledno">Nasledno i porodično pravo</li>
+                <li target="ugovori">Izrada ugovora i drugih pravnih akata</li>
+                <li target="steta">Naknada štete</li>
+                <li target="krivica">Krivično pravo</li>
+                <li target="prekrsaj">Prekršajno pravo</li>
+                <li target="legalizacija">Legalizija i upis nekretnina</li>
+                <li target="imovina">Imovinsko pravo</li>
+                <li target="saveti">Pravni saveti</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="wrapper-service">
+                <select name="usluges" id="usluges">
+                  <option value="eregistracija">
+                    e-Registracija privrednih subjekata
+                  </option>
+                  <option value="esalter">
+                    Upis u katastar putem e-Šaltera
+                  </option>
+                  <option value="nasledno">Nasledno i porodično pravo</option>
+                  <option value="ugovori">
+                    Izrada ugovora i drugih pravnih akata
+                  </option>
+                  <option value="steta">Naknada štete</option>
+                  <option value="krivica">Krivično pravo</option>
+                  <option value="prekrsaj">Prekršajno pravo</option>
+                  <option value="legalizacija">
+                    Legalizija i upis nekretnina
+                  </option>
+                  <option value="imovina">Imovinsko pravo</option>
+                  <option selected value="saveti">Pravni saveti</option>
+                </select>
+                <div class="srvtxt" id="nasledno">
+                  <h3>Nasledno i porodično pravo</h3>
+                  <p>
+                    Porodično pravo je posebna grana prava koja uređuje odnose u
+                    porodici, kao i odnose porodice i društva. Takođe, to je
+                    posebna pravna nauka koja postojeće pravne norme o porodici
+                    sistematizuje, objašnjava i proučava, ali i predlaže nova
+                    zakonska rešenja.
+                    <br />Vršimo sastavljanje predbračnih ugovora, razvod braka,
+                    utvrđivanje i priznanje očinstva, podela imovine, zakonsko
+                    izdržavanje, vršenje roditeljskog prava.<br />
+                    Nasledno pravo je grana prava koja se bavi svim aspektima
+                    nasleđivanja, tj. raspodelom imovine, pravima i obavezama
+                    ostavioca (de cuius-a) u slučaju njegove smrti.<br />
+                    Nasleđivanje u našem pravnom sistemu sprovodi se po
+                    pravilima zakonskog i testamentarnog nasleđivanja. <br />
+                    Sastavljanje testamenta, ugovora o doživotnom izdržavanju,
+                    ugovora o ustupanju i raspodeli imovine, zaštita nužnog
+                    dela, pokretanje i zastupanje u ostavinskom postupku.
+                  </p>
+                </div>
+                <div class="srvtxt" id="ugovori">
+                  <h3>Ugovorno pravo</h3>
+                  <p>
+                    Izrada složenih ugovora pravnim i fizičkim licima od bitnih
+                    elemenata, preko odgovarajućih sredstava obezbeđenja
+                    izvršenja ugovora, regulisanja poreskih aspekata,
+                    poverljivosti, načina rešavanja eventualnih nesporazuma i
+                    mnogih drugih aspekata, u savremenoj advokatskoj praksi
+                    zahteva maksimalnu angažovanost i posvećenost, te pravničku
+                    veštinu i umeće po kojem se prepoznaju vrhunski pravnici.
+                    Nudimo: učestvovanje u pregovorima, sastavljanje svih vrsta
+                    ugovora,zastupanje u postupcima naknade štete, ispunjenje,
+                    raskid poništaj, utvrđenje ništavosti ugovora, naplata
+                    potaživanja, sticanje bez osnova.
+                  </p>
+                </div>
+                <div class="srvtxt" id="steta">
+                  <h3>Nadoknada štete</h3>
+                  <p>
+                    Ko drugome prouzrokuje štetu dužan ju je nadoknaditi. Šteta
+                    može biti materijalna na imovini oštećenih i nematerijalna
+                    za pretrpljene fizičke bolove, duševne bolove, zbog
+                    umanjenja životne aktivnosti, naruženosti, povrede ugleda
+                    časti ili slobode prava ličnosti, kao i za strah ukoliko
+                    jačina bola i straha to opravdava. Šteta može biti stvarna
+                    ili izmakla korist. Štetni događaji mogu nastati u raznim
+                    životnim situacijama i na različitim mestima npr. na
+                    poslu-povredom na radu, na javnom mestu, u školi, ujedom psa
+                    lutalice ili što se najčešće dešava u praksi u saobraćaju.
+                    Bez obzira na mesto nastanka štete štetnik je uvek dužan
+                    nadoknaditi je, takođe naknada se može potraživati i od
+                    osiguravajućeg društva lica koje je prouzrokovalo štetu.
+                  </p>
+                </div>
+                <div class="srvtxt" id="krivica">
+                  <h3>Krivično pravo</h3>
+                  <p>
+                    Кrivično pravo je zakon koji se odnosi na zločin. On
+                    propisuje ponašanje koje se smatra pretnjama, štetnim ili na
+                    drugi način ugrožavanje imovine, zdravlja, sigurnosti i
+                    moralne dobrobiti ljudi. Većina krivičnog zakona utvrđuje se
+                    statutom, što znači da zakon donosi zakonodavstvo. To
+                    uključuje kažnjavanje ljudi koji krše ove zakone. Zastupanje
+                    fizičkih lica u delima opšteg kriminaliteta, zastupanje
+                    pravnih lica u krivičnim delima i privrednim prestupima,
+                    zastupanje oštećenih lica krivičnim delima.
+                  </p>
+                </div>
+                <div class="srvtxt" id="prekrsaj">
+                  <h3>Prekršajno pravo</h3>
+                  <p>
+                    Prekršajno pravo je grana prava koja reguliše uslove
+                    prekršajne odgovornosti građana i pravnih lica, prekršajni
+                    postupak pred prekršajnim sudom i prekršajne sankcije koje
+                    se izriču učiniocima.<br />Sankcije iz prekršaja često mogu
+                    biti prilično oštre. U nekim slučajevima oštrije prema
+                    okrivljenom nego i krivične sankcije. Tako recimo, za isti
+                    prestup, u prekršajnom postupku je obavezna mera oduzimanja
+                    vozačke dozvole, dok u krivičnom postupku za istu stvar
+                    takve mere nema.<br />Advokat za prekršaje može delovati
+                    tako što će sa strankom otići na ročište za saslušanje,
+                    poslati pismenu odbranu, a posle donošenja presude, uložiti
+                    žalbu ili drugi pravni lek, te pratiti da sud ne učini neku
+                    procesnu grešku ili nepravilnost. Prekršajni postupak često
+                    u sebi sadrži formalne nedostatke, koje okrivljeni često
+                    nije u stanju da uoči, te treba svakako pitati advokata za
+                    prekršaje za mišljenje.
+                  </p>
+                </div>
+                <div class="srvtxt" id="saveti">
+                  <h3>Pravni saveti</h3>
+                  <p>
+                    Možete nam postaviti pitanje u vezi sa Vašim konkretnim
+                    pravnim problemima kao i radi informisanosti o Vašim pravima
+                    i obavezama. Nakon što dobijete potvrdu da je Vaše pitanje
+                    prihvaćeno, poslaćemo Vam instrukcije za uplatu. Poslaćemo
+                    Vam konkretan i obrazložen odgovor u vidu pravnog saveta.
+                    Rok u kojem ćete dobiti pravni savet je 24 sata od potvrde
+                    da je izvršeno plaćanje. Nakon dobijenog pravnog saveta,
+                    imate mogućnost postavljanja jednog potpitanja za dodatno
+                    pojašnjenje, na koje ćete dobiti besplatan odgovor. Cena
+                    pravnog saveta je 9.000,00 dinara. Pitanje postavite putem
+                    email forme klikom na dugme ispod ili porukom na telefon u
+                    kontaktu.
+                  </p>
+                  <a href="#contact">Email</a>
+                </div>
+                <div class="srvtxt" id="legalizacija">
+                  <h3>Legalizacija i upis nekretnina</h3>
+                  <p>
+                    Legalizacija, tj.ozakonjenje je još jedan segment imovinskog
+                    prava. Procedura podvođenja nelegalizovanog objekta u pravne
+                    vode, kada je u fazi izgradnje izostalo pribavljanje
+                    potrebnih dozvola, naziva se ozakonjenje i sastoji se iz
+                    naknadnog izdavanja građevinske ili upotrebne dozvole za
+                    objekat.<br />Upisom prava svojine u katastar nepokretnosti,
+                    bez obzira na osnov po kom se upisujete u ovaj registar,
+                    definitivno postajete knjižni vlasnik na nepokretnosti.
+                    Postupak pred katastrom nepokretnosti je nadležnost našeg
+                    tima, za šta nas možete angažovati i to kako u slučaju
+                    potrebe za upisom prava svojine na nepokretnostima, tako i
+                    za druge forme zastupanja pred katastrom u okviru njegove
+                    nadležnosti.
+                  </p>
+                </div>
+                <div class="srvtxt" id="imovina">
+                  <h3>Imovinsko pravo</h3>
+                  <p>
+                    Imovinsko pravo je grana prava sa kojim će se u životu svaki
+                    građanin susresti pre ili kasnije. Ono se odnosi na sticanje
+                    i promet prava svojine na kućama, stanovima, zemljištu,
+                    novcu i bankovnim računima, automobilima i svim ostalim
+                    vrednostima. Osim toga, imovinsko pravo tiče se svih vrsta
+                    pravnih ugovora koje zaključuju pojedinci i privredna
+                    društva u okviru autonomije volje, naslednih odnosa, prava
+                    iz osiguranja, prava povodom prouzrokovanja štete, prava iz
+                    bračnih i porodičnih odnosa i slično.
+                  </p>
+                </div>
+                <div class="srvtxt" id="eregistracija">
+                  <h3>e-Registracija privrednih subjekata</h3>
+                  <p></p>
+                </div>
+                <div class="srvtxt" id="esalter">
+                  <h3>Upis u katastar putem e-Šaltera</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <h2>O meni</h2>
+          <div class="row g-0">
+            <div class="col-12 col-md-6">
+              <img src="img/about1.jpg" alt="Slika za services" />
+            </div>
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <p class="text">
+                Advokatska kancelarija Jaćimović sa sedištem u Veterniku,
+                zasniva saradnju na međusobnom poverenju te se obavezuje na
+                pouzdan, otvoren i proaktivan pristup i komunikaciju sa
+                klijentima. Naše znanje stavljamo u svrhu ostvarivanja svih
+                vaših prava. Kvalitet nam je osnovni princip u radu. Na osnovu
+                Vaših potreba i očekivanja obezbeđujemo vrhunski kvalitet usluge
+                u svim oblastima prava. U zajedničkoj saradnji sa klijentima
+                definišemo očekivanja po pitanju našeg angažovanja, nakon čega
+                na osnovu našeg znanja i iskustva primenjujemo odgovarajuću
+                strategiju radi postizanja najoptimalnijeg rezultata.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <section id="contact">
-        <div class="container">
-            <h2 class="text-center text-uppercase">kontakt</h2>
-            <div class="row no-gutters">
-                <div class="col-12 col-md-6">
-                    <div class="col-12 text-left">
-                        <h6 class="section-heading">Adresa</h6>
-                        <address>Omladinska 6<br />21000 Novi Sad, Veternik</address>
-                    </div>
-                    <div class="col-12 text-left">
-                        <h6 class="section-heading">Mail</h6>
-                        <a href="mailto:advokatigorjacimovic@gmail.com">advokatigorjacimovic@gmail.com</a>
-                    </div>
-                    <div class="col-12 text-left">
-                        <h6 class="section-heading">Telefon</h6>
-                        <a class="text-left" href="tel:+38164/6101-720">064/0790-276</a>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="text-center text-uppercase">kontakt</h2>
+        <div class="row-g-0">
+          <div class="col-12 col-md-6 offset-md-3">
+            <p class="text-center">
+              Ovde možete postaviti pitanje za pravni savet ili da zakažete
+              sastanak.
+            </p>
+            <form
+              method="POST"
+              name="contactform"
+              action="contact-form-handler.php"
+            >
+              <input type="text" name="name" placeholder="Vaše ime" />
 
-                <div class="col-12 col-md-6">
-                    <p class="text-center">Ukoliko imate pitanje napišite poruku.</p>
-                    <form method="POST" name="contactform" action="contact-form-handler.php">
-                        <p>
-                            <input type="text" name="name" placeholder="Vaše ime">
-                        </p>
-                        <p>
-                            <input type="text" name="email" placeholder="Vaš email">
-                        </p>
-                        <p>
-                            <textarea rows="6" name="message" placeholder="Vaša poruka"></textarea>
-                        </p>
-                        <button role="button" type="submit" value="Submit">Pošalji</button>
-                    </form>
-                </div>
-                <div class="col-12 m-auto">
-                    <div style="width: 100%"><iframe width="100%" height="325"
-                            src="https://maps.google.com/maps?width=100%&amp;height=325&amp;hl=en&amp;q=Omladinska%206%20Veternik+(Igor%20Ja%C4%87imoiv%C4%87%20Advokat)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a
-                                href="https://www.maps.ie/coordinates.html">latitude longitude finder</a></iframe>
-                    </div>
-                </div>
-            </div>
+              <input type="text" name="email" placeholder="Vaš email" />
 
-            <div class="text-center">
-                <a title="Nazad na vrh stranice" href="#"><i class="fas fa-angle-double-up fa-3x"></i></a>
-            </div>
+              <textarea
+                rows="6"
+                name="message"
+                placeholder="Vaša poruka"
+              ></textarea>
 
+              <button role="button" type="submit" value="Submit">
+                Pošalji
+              </button>
+            </form>
+          </div>
         </div>
-        <!--  container -->
+      </div>
+      <div class="container-fluid contact-h">
+        <div class="container p-0">
+          <div class="row g-0">
+            <div class="col-12 col-md-3">
+              <div class="kont-h">
+                <i class="fas fa-home fa-2x"></i>
+                <div class="">
+                  <h6 class="section-heading">Adresa</h6>
+                  <address>Omladinska 6<br />21000 Novi Sad, Veternik</address>
+                </div>
+              </div>
+              <div class="kont-h">
+                <i class="fas fa-envelope fa-2x"></i>
+                <div class="">
+                  <h6 class="section-heading">Mail</h6>
+                  <a href="mailto:advjacimovic@gmail.com"
+                    >advjacimovic@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="kont-h">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <div class="">
+                  <h6 class="section-heading">Telefon</h6>
+                  <a class="text-left" href="tel:+38164/6101-720"
+                    >064/0790-276</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div style="width: 100%">
+                <iframe
+                  width="100%"
+                  height="325"
+                  src="https://maps.google.com/maps?width=100%&amp;height=325&amp;hl=en&amp;q=Omladinska%206%20Veternik+(Igor%20Ja%C4%87imoiv%C4%87%20Advokat)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  ><a href="https://www.maps.ie/coordinates.html"
+                    >latitude longitude finder</a
+                  ></iframe
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row no-gutters flex-column text-center">
-                <a href="#"><img src="img/logonaszlatan6.png" alt="logo footer"></a>
-                <p class="text-center w-100"><small>Copyright © RDdesign 2019. All Rights Reserved</small></p>
-            </div>
-        </div>
+      <div class="container text-center py-2">
+        <a href="http://doveden.com/"
+          ><img src="img/dova.png" alt="logo footer"
+        /></a>
+        <p class="trademark text-center">
+          &copy; <span id="displayYear"></span> All Rights Reserved. Designed By
+          <a href="http://doveden.com/">RdDesign</a>
+        </p>
+      </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
