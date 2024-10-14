@@ -137,6 +137,8 @@ nav {
     a {
         transition: 0.25s ease;
         display: flex;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     img {
@@ -227,6 +229,8 @@ nav {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     color: white;
     @include small-device {
@@ -252,6 +256,8 @@ nav {
     }
     a {
         color: white;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         position: relative;
         border: 2px solid rgba(255, 255, 255, 0.8);
@@ -280,6 +286,8 @@ nav {
         margin-bottom: 50px;
         margin-top: 3rem;
         height: 20px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         a {
             border-radius: 0;
@@ -370,6 +378,8 @@ nav {
     ul {
         height: 100%;
         display: flex;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
         flex-direction: column;
         justify-content: flex-start;
@@ -423,6 +433,8 @@ nav {
     .srvtxt {
         display: none;
         flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
         min-height: 100%;
         padding: 30px;
@@ -562,6 +574,17 @@ footer {
     }
 }
 
+@-webkit-keyframes anima-left {
+    0% {
+        transform: rotate(0) translateX(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
 @keyframes anima-left {
     0% {
         transform: rotate(0) translateX(-90px);
@@ -574,7 +597,19 @@ footer {
 }
 
 .anima-left {
+    -webkit-animation: anima-left 2s forwards 0s linear;
     animation: anima-left 2s forwards 0s linear;
+}
+
+@-webkit-keyframes anima-up-down {
+    0% {
+        transform: rotate(0) translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0);
+        opacity: 1;
+    }
 }
 
 @keyframes anima-up-down {
@@ -589,7 +624,18 @@ footer {
 }
 
 .anima-up-down {
+    -webkit-animation: anima-up-down 1s forwards 0s linear;
     animation: anima-up-down 1s forwards 0s linear;
+}
+@-webkit-keyframes small-in {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: rotateX(0);
+        opacity: 1;
+    }
 }
 @keyframes small-in {
     0% {
@@ -603,7 +649,18 @@ footer {
 }
 
 .small-in {
+    -webkit-animation: small-in 2s forwards 0s ease;
     animation: small-in 2s forwards 0s ease;
+}
+
+@-webkit-keyframes anima-hero {
+    0% {
+        transform: scale(0.2) skewX(-9deg);
+        transform-origin: 70% -50%;
+        opacity: 0.1;
+    }
+    100% {
+    }
 }
 
 @keyframes anima-hero {
@@ -617,5 +674,6 @@ footer {
 }
 
 .anima-hero {
+    -webkit-animation: anima-hero 3s forwards 0s linear;
     animation: anima-hero 3s forwards 0s linear;
 }

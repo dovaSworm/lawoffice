@@ -585,7 +585,6 @@ footer a img {
   margin: auto;
   height: 40px;
 }
-
 @keyframes anima-left {
   0% {
     transform: rotate(0) translateX(-90px);
@@ -599,7 +598,6 @@ footer a img {
 .anima-left {
   animation: anima-left 2s forwards 0s linear;
 }
-
 @keyframes anima-up-down {
   0% {
     transform: rotate(0) translateY(-20px);
@@ -613,7 +611,6 @@ footer a img {
 .anima-up-down {
   animation: anima-up-down 1s forwards 0s linear;
 }
-
 @keyframes small-in {
   0% {
     transform: scale(0.1);
@@ -627,7 +624,6 @@ footer a img {
 .small-in {
   animation: small-in 2s forwards 0s ease;
 }
-
 @keyframes anima-hero {
   0% {
     transform: scale(0.2) skewX(-9deg);
