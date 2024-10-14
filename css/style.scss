@@ -10,19 +10,21 @@ $sim-device: 1023px;
         @content;
     }
 }
-$large-device: 1024px;
+
+$medium-device: 768px;
 @mixin medium-device {
     @media (min-width: #{$medium-device}) and (max-width: #{$large-device}) {
         @content;
     }
 }
+$large-device: 1024px;
 @mixin large-device {
     @media (min-width: #{$large-device}) {
         @content;
     }
 }
 @font-face {
-    font-family: "Poirot";
+    font-family: "Poiret";
     src: url(../fonts/PoiretOne-Regular.ttf) format("truetype");
 }
 @font-face {
@@ -35,8 +37,6 @@ $large-device: 1024px;
 }
 $zlatna: #ff9700;
 $zlatna2: rgba(255, 151, 0, 0.3);
-// GENERAL
-@import "mixin";
 body,
 html {
     font-family: "OpenSans";
@@ -57,7 +57,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Poiret One";
+    font-family: "Poiret";
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
@@ -246,11 +246,12 @@ nav {
     p {
         font-size: 1.6rem;
         text-transform: uppercase;
-        font-family: "Poirot";
+        font-family: "Poiret";
         text-align: center;
         margin: 30px 10px 50px 10px;
     }
     a {
+        color: white;
         width: fit-content;
         position: relative;
         border: 2px solid rgba(255, 255, 255, 0.8);
@@ -281,6 +282,7 @@ nav {
         height: 20px;
         width: fit-content;
         a {
+            border-radius: 0;
             margin: auto;
         }
         img {
@@ -304,7 +306,10 @@ nav {
 .text {
     padding-left: 50px;
     padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 18px;
+    background-color: whitesmoke;
     @include small-device {
         font-size: 16px;
         padding: 0;
@@ -446,15 +451,34 @@ nav {
     }
 }
 
-div.col-12.col-md-6.d-flex::after {
+.img-h::after {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    left: -50%;
+    left: 0;
+    // border: 20px solid whitesmoke;
+    box-shadow:
+        20px 20px whitesmoke,
+        -20px -20px whitesmoke;
     content: "";
     z-index: 0;
     background: rgba(252, 171, 66, 0.38);
+    @include small-device {
+        display: none;
+    }
+}
+
+.txt-h::before {
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    rotate: 90deg;
+    top: -15%;
+    left: -50%;
+    content: "";
+    z-index: -1;
+    border: 2px solid #000;
     @include small-device {
         display: none;
     }
